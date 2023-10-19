@@ -1,5 +1,71 @@
 public class HW5 {
     public static void main(String args[]) {
+
+        int a = 7;
+        int b = 4;
+        if (a == b) {
+            System.out.println("квадрат");
+        } else {
+            System.out.println("прямоугольник");
+        }
+
+        System.out.println("===========");
+
+        int price = 7000;
+        int discount = 5000;
+        if (price > discount) {
+            double nprice = price * 0.9;
+            System.out.println(nprice + " со скидкой");
+        } else {
+            System.out.println(price + " без");
+        }
+
+        System.out.println("===========");
+
+        int grade = 54;
+        if (grade > 80) {
+            System.out.println("A");
+        }
+        if (grade > 60 && grade <= 80) {
+            System.out.println("B");
+        }
+        if (grade > 50 && grade <= 60) {
+            System.out.println("C");
+        }
+        if (grade > 45 && grade <= 50) {
+            System.out.println("D");
+        }
+        if (grade > 25 && grade <= 45) {
+            System.out.println("E");
+        }
+        if (grade <= 25) {
+            System.out.println("F");
+        }
+
+        int l = 518631;
+        while (l > 0) {
+            int f = l % 10;
+            System.out.print(f);
+            l = l / 10;
+        }
+
+        int с = 17;
+        boolean prime = true;
+        for (int i = 2; i < с; i++) {
+
+            if (с % i == 0) {
+                prime = false;
+                System.out.println("непростое");
+                break;
+            }
+        }
+        if (prime) {
+            System.out.println("простое");
+        }
+
+        System.out.println("===========");
+
+
         int num = 6;
 
         if (num % 2 == 0) {
@@ -21,7 +87,7 @@ public class HW5 {
         System.out.println("===========");
 
         int year = 2015;
-        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)){
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
             System.out.println("366");
         } else System.out.println("365");
 
