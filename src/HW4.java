@@ -22,6 +22,46 @@ public class HW4 {
 
         System.out.println("===========");
 
+        int x = 0;
+        int c = x + 5;
+        System.out.println("x + 5 = " + c);
+
+        System.out.println("===========");
+
+        int o = 25;
+        int p = 43;
+        if (o < p) {
+            System.out.println("25>43");
+        } else {
+            System.out.println("Выражение не верно");
+        }
+
+        System.out.println("===========");
+
+        int m = 10;
+        int n = 5;
+        int summa = m + n;
+        int proizvedenie = m * n;
+        int delenieE = m / n;
+        double modul = m % n;
+        System.out.println("summa = " + summa + " delenie = " + delenieE + " modul = " + modul);
+
+        System.out.println("===========");
+
+        double farengeit = 98.6;
+        double celsia = (farengeit - 32) * 5 / 9;
+        System.out.println(farengeit + " = " + celsia);
+
+        System.out.println("===========");
+
+        int j = 65;
+        int k = 80;
+        if (j < 50 && j < k) {
+            System.out.println("да");
+        } else {
+            System.out.println("нет");
+        }
+
 
     }
 }
